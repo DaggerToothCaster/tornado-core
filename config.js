@@ -72,7 +72,7 @@ module.exports = {
     netId5: {
       eth: {
         instanceAddress: {
-          0.1: '0xBBC181f0e156aA31475327bFbAE76a02aD959c97',
+          0.1: '0x1C7e7CD38B9D56cB079C0B87F65225B0086C4AA5',
         },
         symbol: 'ETH',
         decimals: 18,
