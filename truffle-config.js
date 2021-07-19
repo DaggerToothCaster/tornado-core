@@ -42,6 +42,19 @@ module.exports = {
 
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
+    goerli: {
+      provider: () =>
+        new HDWalletProvider(
+          process.env.PRIVATE_KEY,
+          'https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161',
+        ),
+      network_id: 5,
+      gas: 6000000,
+      gasPrice: utils.toWei('1', 'gwei'),
+      // confirmations: 0,
+      // timeoutBlocks: 200,
+      skipDryRun: true,
+    },
     kovan: {
       provider: () => new HDWalletProvider(process.env.PRIVATE_KEY, 'https://kovan.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3'),
       network_id: 42,
